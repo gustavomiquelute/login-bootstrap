@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Profissional - Bootstrap</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-login {
+            border: none;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container login-container">
+        <div class="row w-100 justify-content-center">
+            <div class="col-12 col-md-8 col-lg-5 col-xl-4">
+                
+                <section class="card card-login p-4 p-sm-5">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4 fw-bold">Acesse sua Conta</h2>
+                        
+                        <form>
+                            <!-- Campo de E-mail -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+                            </div>
+
+                            <!-- Campo de Senha -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Senha</label>
+                                <input type="password" class="form-control" id="password" placeholder="Sua senha" required>
+                            </div>
+
+                            <!-- Link Auxiliar: Esqueci Senha -->
+                            <div class="mb-3 text-end">
+                                <a href="#" class="text-decoration-none small text-secondary">Esqueci minha senha</a>
+                            </div>
+
+                            <!-- Botão de Login -->
+                            <div class="d-grid mb-3">
+                                <button type="submit" class="btn btn-primary btn-lg fw-semibold">Entrar</button>
+                            </div>
+
+                            <!-- Link Auxiliar: Criar Conta -->
+                            <div class="text-center mt-4">
+                                <span class="text-muted">Não tem uma conta?</span>
+                                <a href="#" class="text-decoration-none fw-bold"> Criar conta</a>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS (Opcional para componentes interativos) -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
